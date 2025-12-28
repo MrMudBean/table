@@ -1,5 +1,5 @@
 import { createConstructor } from 'a-js-tools';
-import { table } from './src/core';
+import { table } from './core';
 
 /**
  *
@@ -30,6 +30,6 @@ export type {
   ColoredTableRowOption,
   ColoredTableEle,
   ColoredTableOptions,
-} from './src/types';
+} from './types';
 
-export { globalData as ColoredTableGlobalData } from './src/global';
+export { globalData as ColoredTableGlobalData } from './global';

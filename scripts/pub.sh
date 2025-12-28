@@ -49,9 +49,9 @@ publish() {
 set -e
 publish
 
-node ./scripts/change-name.js
+# node ./scripts/change-name.js
 
-publish
+# publish
 
 echo "🚀🚀  发布成功，完结 🎉🎉 撒花 🎉🎉"
 

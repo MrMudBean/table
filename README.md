@@ -1,9 +1,5 @@
 # 彩色表格
 
-~~一个在控制台构建表格的工具（自定义版 console.table ）~~
-
-~~本来想着写成在终端（node 环境）和控制台（浏览器环境）公用的，但是发现在浏览器环境表现不佳，且不同的浏览器环境渲染效果不同，还不如使用 `console.table`~~
-
 现在支持在浏览器环境打印彩色文本的表格，但是目前不支持自定义边框及长文本换行。因为在 `node` 使用的终端和浏览器的控制台渲染的方式不同，其核心代码也不尽相同。
 
 (目前的小问题就是当同行表情过多时会产生偏移)
@@ -12,10 +8,6 @@
 
 ```bash
 npm install  --save colored-table
-
-# 亦可 (两包以后将同步版本发布)
-
-npm install --save @qqi/table
 ```
 
 ## 使用
@@ -49,11 +41,11 @@ table();
 
 在浏览器效果：
 
-[![浏览器表格](https://raw.githubusercontent.com/earthnutDev/qqi/main/media/浏览器表格.png)](https://github.com/earthnutDev/qqi/blob/main/media/浏览器表格.png)
+[![浏览器表格](https://raw.githubusercontent.com/MrMudBean/qqi/main/media/浏览器表格.png)](https://github.com/MrMudBean/qqi/blob/main/media/浏览器表格.png)
 
 带表情的效果
 
-[![浏览器表格](https://raw.githubusercontent.com/earthnutDev/qqi/main/media/浏览器表格-with-emoji.png)](https://github.com/earthnutDev/qqi/blob/main/media/浏览器表格-with-emoji.png)
+[![浏览器表格](https://raw.githubusercontent.com/MrMudBean/qqi/main/media/浏览器表格-with-emoji.png)](https://github.com/MrMudBean/qqi/blob/main/media/浏览器表格-with-emoji.png)
 
 ### setFontSize
 
