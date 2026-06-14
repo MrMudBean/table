@@ -1,4 +1,1 @@
-minimumReleaseAgeExclude:
-  - '@mudbean/pen-static@1.1.2'
-  - '@mudbean/pen@3.0.1'
-  - '@mudbean/is@2.0.3'
+minimumReleaseAge: 0

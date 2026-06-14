@@ -40,10 +40,14 @@ packageJson = {
   files: [cjsPrefix, esPrefix, 'LICENSE', 'README.md', 'CHANGELOG.md'],
   exports: {
     '.': {
-      import: `./${esPrefix}/index.js`,
-      default: `./${esPrefix}/index.js`,
-      require: `./${cjsPrefix}/index.js`,
-      types: `./${dtsPrefix}/index.d.ts`,
+      import: {
+        default: `./${esPrefix}/index.js`,
+        types: `./${dtsPrefix}/index.d.ts`,
+      },
+      require: {
+        default: `./${cjsPrefix}/index.js`,
+        types: `./${dtsPrefix}/index.d.ts`,
+      },
     },
   },
   keywords: [
@@ -63,6 +67,10 @@ packageJson = {
   repository: {
     type: 'git',
     url: 'git+https://github.com/MrMudBean/table.git',
+  },
+  publishConfig: {
+    access: 'public',
+    registry: 'https://registry.npmjs.org/',
   },
   browserslist: ['last 2'],
   engines: {
