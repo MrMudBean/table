@@ -1,4 +1,4 @@
-import { createConstructor } from 'a-js-tools';
+import { createConstructor } from '@mudbean/utils';
 import { ColoredTableCommonOption, ColoredTableRow } from '../types';
 
 /**  构建行 原始类  */

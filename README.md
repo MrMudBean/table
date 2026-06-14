@@ -2,18 +2,18 @@
 
 现在支持在浏览器环境打印彩色文本的表格，但是目前不支持自定义边框及长文本换行。因为在 `node` 使用的终端和浏览器的控制台渲染的方式不同，其核心代码也不尽相同。
 
-(目前的小问题就是当同行表情过多时会产生偏移)
+(目前的小问题就是当同行表情过多时会产生微小偏移)
 
 ## 安装
 
 ```bash
-npm install  --save colored-table
+npm install  --save @mudbean/table
 ```
 
 ## 使用
 
 ```ts
-import { ColoredTable } from 'colored-table';
+import { ColoredTable } from '@mudbean/table';
 
 /** 构建表格，可传入初始化的数据，也可直接不使用参数而使用 `addRow` 添加行 */
 const table = new ColoredTable([
@@ -41,11 +41,11 @@ table();
 
 在浏览器效果：
 
-[![浏览器表格](https://raw.githubusercontent.com/MrMudBean/qqi/main/media/浏览器表格.png)](https://github.com/MrMudBean/qqi/blob/main/media/浏览器表格.png)
+![浏览器表格](https://static.lmssee.com/image/npm/浏览器表格.png)
 
 带表情的效果
 
-[![浏览器表格](https://raw.githubusercontent.com/MrMudBean/qqi/main/media/浏览器表格-with-emoji.png)](https://github.com/MrMudBean/qqi/blob/main/media/浏览器表格-with-emoji.png)
+![浏览器表格](https://static.lmssee.com/image/npm/浏览器表格-with-emoji.png)
 
 ### setFontSize
 
@@ -60,6 +60,8 @@ table.setFontSize(16); // 渲染表格会在控制台显示更大
 
 包还导出了 `ColoredTableGlobalData` 用于指定默认全局的样式。在该数据上的更改将直接影响所有没有特殊配置样式的文本或是边框。
 
-## 文档地址
+## 状态
 
-[colored-table](https://earthnut.dev/nmp/colored-table)
+此软件包是 `@mudbean` 生态系统的一部分。
+它使用严格的 TypeScript 编写，并通过 Rollup 构建进行验证。
+虽然单元测试较少，但 API 稳定，并在生产环境中大量使用。

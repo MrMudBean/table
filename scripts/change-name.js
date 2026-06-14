@@ -2,7 +2,7 @@ import {
   pathJoin,
   readFileToJsonSync,
   getDirectoryBy,
-  writeJsonFile,
+  writeJsonFileSync,
 } from 'a-node-tools';
 
 const packageJson = readFileToJsonSync('./dist/package.json');
@@ -16,5 +16,5 @@ packageJson.name = '@qqi/table';
 
   const distPackagePath = pathJoin(distPath, './dist/package.json');
 
-  writeJsonFile(distPackagePath, packageJson);
+  writeJsonFileSync(distPackagePath, packageJson);
 }

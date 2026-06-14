@@ -1,4 +1,4 @@
-import { createConstructor } from 'a-js-tools';
+import { createConstructor } from '@mudbean/utils';
 import { ColoredTableCommonOption, ColoredTableEle } from '../types';
 
 /** TableEleClass 类，原始构建类   */

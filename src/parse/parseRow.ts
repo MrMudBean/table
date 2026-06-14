@@ -1,4 +1,3 @@
-import { isArray } from 'a-type-of-js';
 import {
   ColoredTableCommonOption,
   ColoredTableRow,
@@ -7,6 +6,8 @@ import {
 import { RowEleClass } from '../ele/rowEle';
 import { setPro } from '../proto/setPro';
 import { parseCell } from './parseCell';
+import { isArray } from '@mudbean/is';
+
 /**  表格的行原型  */
 export class RowProto {}
 

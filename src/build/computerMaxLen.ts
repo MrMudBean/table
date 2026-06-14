@@ -1,6 +1,6 @@
 import { ColoredTableEle } from '../types';
-import { strInTerminalLength } from 'color-pen';
 import { browserEnv, data } from '../global';
+import { strInTerminalLength } from '@mudbean/pen';
 
 /**  计算得到最大的值  */
 export function computerMaxLen(data: ColoredTableEle): number[] {

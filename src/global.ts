@@ -1,6 +1,5 @@
+import { isNode } from '@mudbean/utils';
 import { ColoredTableBorder, ColoredTableContentAlign } from './types';
-
-import { isNode } from 'a-js-tools';
 
 /**  浏览器环境  */
 export const browserEnv = !isNode();

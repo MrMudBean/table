@@ -1,9 +1,9 @@
 import { ColoredTableRow } from '../types';
-import { isNull, isUndefined } from 'a-type-of-js';
 import { createPen } from './createPen';
-import { cutoffStringWithChar } from 'color-pen';
 import { lines } from '../lines';
-import { terminalResetStyle } from '@color-pen/static';
+import { isNull, isUndefined } from '@mudbean/is';
+import { cutoffStringWithChar } from '@mudbean/pen';
+import { terminalResetStyle } from '@mudbean/pen-static';
 
 /**  构建表头  */
 export function buildHeader(

@@ -1,9 +1,9 @@
-import { colorText, strInTerminalLength } from 'color-pen';
 import { ColoredTableEle } from '../types';
 import { buildBody } from './buildBody';
 import { buildHeader } from './buildHeader';
 import { computerMaxLen } from './computerMaxLen';
 import { browserEnv, data } from '../global';
+import { colorText, strInTerminalLength } from '@mudbean/pen';
 
 /**  渲染  */
 export function render(table: ColoredTableEle, fontSize: number) {

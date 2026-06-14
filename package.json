@@ -1,6 +1,6 @@
 {
-  "name": "colored-table",
-  "version": "0.2.0",
+  "name": "@mudbean/table",
+  "version": "0.2.1",
   "type": "module",
   "private": true,
   "scripts": {
@@ -13,7 +13,6 @@
     "push:version": "gvv",
     "test": "jja rm .eg && rollup --config rollup.config.eg.js && node .eg/index.mjs",
     "vjj": "vjj",
-    "prepare": "husky",
     "eslint": "jja cls && eslint packages",
     "prettier": "jja cls && prettier . --write"
   },
@@ -34,9 +33,7 @@
     "eslint-plugin-jsdoc": "^61.5.0",
     "globals": "^16.5.0",
     "gvv": "^0.1.8",
-    "husky": "^9.1.7",
     "jja": "^2.3.21",
-    "lint-staged": "^16.2.7",
     "pjj": "^1.0.4",
     "prettier": "^3.7.4",
     "rollup": "^4.54.0",
@@ -47,15 +44,11 @@
     "typescript-eslint": "^8.50.1",
     "vjj": "^1.0.11"
   },
-  "lint-staged": {
-    "*.{js,ts}": [
-      "prettier --write"
-    ]
-  },
+  "packageManager": "pnpm@11.6.0+sha512.9a36518224080c6fe5165afdcfe79bfa118c29be703f3f462b1e32efe1e98e47e8750b148e08286250aad4113cc7993ca413c4e2cd447752708c2ee5751bc95f",
   "dependencies": {
-    "@color-pen/static": "^1.1.1",
-    "a-js-tools": "^2.0.1",
-    "a-type-of-js": "^2.0.0",
-    "color-pen": "^3.0.0"
+    "@mudbean/is": "^2.0.3",
+    "@mudbean/pen": "^3.0.1",
+    "@mudbean/pen-static": "^1.1.2",
+    "@mudbean/utils": "^2.0.5"
   }
 }

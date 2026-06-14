@@ -1,4 +1,4 @@
-import { isPlainObject, isType, isUndefined } from 'a-type-of-js';
+import { isUndefined, isType, isPlainObject } from '@mudbean/is';
 import {
   ColoredTableCell,
   ColoredTableCellValue,

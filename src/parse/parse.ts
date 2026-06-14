@@ -1,4 +1,4 @@
-import { isArray, isUndefined } from 'a-type-of-js';
+import { isUndefined, isArray } from '@mudbean/is';
 import {
   ColoredTableOptions,
   ColoredTableCommonOption,
@@ -9,6 +9,7 @@ import { setPro } from '../proto/setPro';
 import { TableEleClass } from '../ele/tableEle';
 import { parseRow } from './parseRow';
 import { createHeaderProto } from '../proto/createHeaderProto';
+
 /**  表格的  */
 class TableProto {}
 

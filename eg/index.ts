@@ -1,4 +1,4 @@
-import { redPen } from 'color-pen';
+import { redPen } from '@mudbean/pen';
 import { ColoredTableGlobalData, Table } from '..';
 
 ColoredTableGlobalData.bold = true;

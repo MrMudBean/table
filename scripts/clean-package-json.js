@@ -2,7 +2,7 @@ import {
   pathJoin,
   readFileToJsonSync,
   getDirectoryBy,
-  writeJsonFile,
+  writeJsonFileSync,
 } from 'a-node-tools';
 
 // 原始 package.json 内容
@@ -15,11 +15,12 @@ const dependencies = packageJson.dependencies;
   'lint-staged',
   'private',
   'dependencies',
+  'packageManager',
 ].forEach(key => delete packageJson[key]);
 
 const esPrefix = 'es'; // es 前缀
 const cjsPrefix = 'cjs'; // cjs 前缀
-const dtsPrefix = 'es/src'; // 类型文件的前缀
+const dtsPrefix = 'es'; // 类型文件的前缀
 // 查看当前打包 dist 文件路径
 const distParentPath = getDirectoryBy('dist', 'directory');
 
@@ -31,12 +32,12 @@ packageJson = {
   author: {
     name: '泥豆君',
     email: 'Mr.MudBean@outlook.com',
-    url: 'https://earthnut.dev',
+    url: 'https://mudbean.cn',
   },
   description: '一个简单的在控制台及控制台构建彩色文本表格的工具',
   sideEffects: false, // 核心：开启 Tree Shaking
   license: 'MIT',
-  files: [cjsPrefix, esPrefix, 'LICENSE', 'README.md'],
+  files: [cjsPrefix, esPrefix, 'LICENSE', 'README.md', 'CHANGELOG.md'],
   exports: {
     '.': {
       import: `./${esPrefix}/index.js`,
@@ -45,16 +46,23 @@ packageJson = {
       types: `./${dtsPrefix}/index.d.ts`,
     },
   },
-  keywords: ['colored table', '终端', '彩色表格', '控制台', 'terminal'],
-  homepage: 'https://earthnut.dev/npm/colored-table',
+  keywords: [
+    'colored table',
+    '终端',
+    '彩色表格',
+    '控制台',
+    'terminal',
+    'mudbean',
+  ],
+  homepage: 'https://npm.lmssee.com/table',
   dependencies,
   bugs: {
-    url: 'https://github.com/MrMudBean/colored-table/issues',
+    url: 'https://github.com/MrMudBean/table/issues',
     email: 'Mr.MudBean@outlook.com',
   },
   repository: {
     type: 'git',
-    url: 'git+https://github.com/MrMudBean/colored-table.git',
+    url: 'git+https://github.com/MrMudBean/table.git',
   },
   browserslist: ['last 2'],
   engines: {
@@ -66,5 +74,5 @@ packageJson = {
   // 整理打包后 package.json 文件路径
   const distPackagePath = pathJoin(distParentPath, './dist/package.json');
   // 写入新的 packages.json 文件
-  writeJsonFile(distPackagePath, packageJson);
+  writeJsonFileSync(distPackagePath, packageJson);
 }

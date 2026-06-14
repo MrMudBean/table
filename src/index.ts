@@ -1,14 +1,10 @@
-import { createConstructor } from 'a-js-tools';
+import { createConstructor } from '@mudbean/utils';
 import { table } from './core';
 
 /**
+ * # 构建 DIY 表单
  *
- *  # 构建 DIY 表单
- *
- *  使用 console.table 构建的表单默认不支持彩色文本（目前我没找到支持的方法），遂花几日写该方法
- *
- *
- *
+ * 使用 console.table 构建的表单默认不支持彩色文本（目前我没找到支持的方法），遂花几日写该方法
  */
 const tableClass = createConstructor(table);
 

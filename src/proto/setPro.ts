@@ -1,4 +1,4 @@
-import { isString, isType, isUndefined } from 'a-type-of-js';
+import { isString, isType, isUndefined } from '@mudbean/is';
 import {
   ColoredTableCommonOption,
   ColoredTableBorderStyle,
