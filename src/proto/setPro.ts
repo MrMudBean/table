@@ -1,4 +1,4 @@
-import { isString, isType, isUndefined } from '@mudbean/is';
+import { isString, isType, isUndefined } from '@vvi/is';
 import {
   ColoredTableCommonOption,
   ColoredTableBorderStyle,

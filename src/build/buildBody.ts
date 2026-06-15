@@ -1,9 +1,9 @@
 import { ColoredTableRow } from '../types';
 import { createPen } from './createPen';
 import { lines } from '../lines';
-import { terminalResetStyle } from '@mudbean/pen-static';
-import { isNull, isUndefined } from '@mudbean/is';
-import { cutoffStringWithChar } from '@mudbean/pen';
+import { terminalResetStyle } from '@vvi/pen-static';
+import { isNull, isUndefined } from '@vvi/is';
+import { cutoffStringWithChar } from '@vvi/pen';
 
 /**  构建表头  */
 export function buildBody(

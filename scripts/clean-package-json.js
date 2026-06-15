@@ -57,6 +57,7 @@ packageJson = {
     '控制台',
     'terminal',
     'mudbean',
+    'vvi',
   ],
   homepage: 'https://npm.lmssee.com/table',
   dependencies,

@@ -1,4 +1,4 @@
-import { isUndefined, isArray } from '@mudbean/is';
+import { isUndefined, isArray } from '@vvi/is';
 import {
   ColoredTableOptions,
   ColoredTableCommonOption,

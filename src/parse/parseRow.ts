@@ -6,7 +6,7 @@ import {
 import { RowEleClass } from '../ele/rowEle';
 import { setPro } from '../proto/setPro';
 import { parseCell } from './parseCell';
-import { isArray } from '@mudbean/is';
+import { isArray } from '@vvi/is';
 
 /**  表格的行原型  */
 export class RowProto {}

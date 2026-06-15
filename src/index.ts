@@ -1,4 +1,4 @@
-import { createConstructor } from '@mudbean/utils';
+import { createConstructor } from '@vvi/utils';
 import { table } from './core';
 
 /**

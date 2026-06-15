@@ -1,4 +1,4 @@
-import { createConstructor } from '@mudbean/utils';
+import { createConstructor } from '@vvi/utils';
 import { ColoredTableCommonOption, ColoredTableRow } from '../types';
 
 /**  构建行 原始类  */

@@ -1,6 +1,6 @@
-import { isBusinessEmptyString, isType, isUndefined } from '@mudbean/is';
+import { isBusinessEmptyString, isType, isUndefined } from '@vvi/is';
 import { ColoredTableCommon } from '../types';
-import { pen } from '@mudbean/pen';
+import { pen } from '@vvi/pen';
 
 /**  默认的笔  */
 export function createPen(options: unknown) {

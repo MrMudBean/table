@@ -1,4 +1,4 @@
-import { isUndefined, isType, isPlainObject } from '@mudbean/is';
+import { isUndefined, isType, isPlainObject } from '@vvi/is';
 import {
   ColoredTableCell,
   ColoredTableCellValue,

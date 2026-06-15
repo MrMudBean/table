@@ -1,4 +1,4 @@
-import { isNode } from '@mudbean/utils';
+import { isNode } from '@vvi/utils';
 import { ColoredTableBorder, ColoredTableContentAlign } from './types';
 
 /**  浏览器环境  */
@@ -42,8 +42,7 @@ class ColoredTableGlobalData {
 }
 
 /**
- *
- * 全局 table 配置
+ * # 全局 table 配置
  *
  * 若没有其他特殊说名，将使用该数据作为最终的渲染依据
  *

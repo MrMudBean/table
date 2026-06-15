@@ -3,7 +3,7 @@ import { buildBody } from './buildBody';
 import { buildHeader } from './buildHeader';
 import { computerMaxLen } from './computerMaxLen';
 import { browserEnv, data } from '../global';
-import { colorText, strInTerminalLength } from '@mudbean/pen';
+import { colorText, strInTerminalLength } from '@vvi/pen';
 
 /**  渲染  */
 export function render(table: ColoredTableEle, fontSize: number) {

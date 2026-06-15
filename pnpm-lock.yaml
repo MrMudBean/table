@@ -8,16 +8,16 @@ importers:
 
   .:
     dependencies:
-      '@mudbean/is':
+      '@vvi/is':
         specifier: ^2.0.5
         version: 2.0.5
-      '@mudbean/pen':
+      '@vvi/pen':
         specifier: ^3.0.2
         version: 3.0.2
-      '@mudbean/pen-static':
+      '@vvi/pen-static':
         specifier: ^1.1.3
         version: 1.1.3
-      '@mudbean/utils':
+      '@vvi/utils':
         specifier: ^2.0.6
         version: 2.0.6
     devDependencies:
@@ -188,22 +188,6 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
-
-  '@mudbean/is@2.0.5':
-    resolution: {integrity: sha512-vY5OVZGAK103y2eGf3NNOHZtk6SGon113YD/5xXr+XnMdNEU6g7Il9w6Rt0P+3BI9T9l6DSuOEmlAuyDE0kekw==}
-    engines: {node: '>=14.0.0'}
-
-  '@mudbean/pen-static@1.1.3':
-    resolution: {integrity: sha512-mX49a8K+6nFGXSYYVS94SJfIWs3WqZhM1ci7+Rf4IgV9OxD5OkR4flt+Z1fCCUS2Z2SHqR7EYF2rzES9LSn4nw==}
-    engines: {node: '>=18.0.0'}
-
-  '@mudbean/pen@3.0.2':
-    resolution: {integrity: sha512-I1vratYlM1yEPZIJsyv4+c8OfIQdyP6mHMZY4y+VGCThamHBduVVIblXoVutQTBZMTMW6IEamRF8yNDOtVJRKw==}
-    engines: {node: '>=18.0.0'}
-
-  '@mudbean/utils@2.0.6':
-    resolution: {integrity: sha512-vd/0Pba0oW6aPwsvDWVorzcxLif/+f9y3V2B3gnyWN5m8UKB4whAEDzaSI57a98qJ8EDyNnZq0GxOd76S6zpTg==}
-    engines: {node: '>=18.0.0'}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -518,6 +502,22 @@ packages:
   '@typescript-eslint/visitor-keys@8.61.0':
     resolution: {integrity: sha512-QVLZu3ZPQEE+HICQyAMZ2yLQhxf0meY/wx6Hx14YcTNj13JB3qHlX3lJ02L3fLGHgERRH71kvYDwiXIguT3AjQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@vvi/is@2.0.5':
+    resolution: {integrity: sha512-DHp2dHi/dg3lWG3R10V6xuoffGhZJl9zNkpgqNry5RBW4kcXUtymswqJxbDhHFskllOqG8ommOQNhOLKeHxqkg==}
+    engines: {node: '>=14.0.0'}
+
+  '@vvi/pen-static@1.1.3':
+    resolution: {integrity: sha512-sj+QA6x+UYd0j3fYP/k/mzVx9QzPurNbquwZ8VyYkiZcAIw7hcqSxTrlt+7MsAjKTKT+2eesRqEphd+Z0mxK6Q==}
+    engines: {node: '>=18.0.0'}
+
+  '@vvi/pen@3.0.2':
+    resolution: {integrity: sha512-v2hDkSmO8+ys73XtYV7R0MbeMmIOTRTGDFLJQtp/9VEtG786OmROU4U++NBT4qOy32clDfMAmop/DQ9CmXZ2ng==}
+    engines: {node: '>=18.0.0'}
+
+  '@vvi/utils@2.0.6':
+    resolution: {integrity: sha512-XfrhjMwZHtD31oLOnBDFJGRIxLZpZ+FIxeIEmVbn1G95+hPDBTYIVh+f+goCqZFp2+tzWqrh61Em55s41d9XlQ==}
+    engines: {node: '>=18.0.0'}
 
   a-command@2.3.16:
     resolution: {integrity: sha512-v0QwGJqUnvn/+BiXyFvDCo1BpgaUFfSp09iCQRbvYX4MV4QJAlp52jBuELYGHmJzv2qpVZUy1fsPwAL+x4+23A==}
@@ -1312,20 +1312,6 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@mudbean/is@2.0.5': {}
-
-  '@mudbean/pen-static@1.1.3': {}
-
-  '@mudbean/pen@3.0.2':
-    dependencies:
-      '@mudbean/is': 2.0.5
-      '@mudbean/pen-static': 1.1.3
-      '@mudbean/utils': 2.0.6
-
-  '@mudbean/utils@2.0.6':
-    dependencies:
-      '@mudbean/is': 2.0.5
-
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -1610,6 +1596,20 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.61.0
       eslint-visitor-keys: 5.0.1
+
+  '@vvi/is@2.0.5': {}
+
+  '@vvi/pen-static@1.1.3': {}
+
+  '@vvi/pen@3.0.2':
+    dependencies:
+      '@vvi/is': 2.0.5
+      '@vvi/pen-static': 1.1.3
+      '@vvi/utils': 2.0.6
+
+  '@vvi/utils@2.0.6':
+    dependencies:
+      '@vvi/is': 2.0.5
 
   a-command@2.3.16:
     dependencies:
