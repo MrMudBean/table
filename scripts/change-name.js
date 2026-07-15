@@ -3,7 +3,7 @@ import {
   readFileToJsonSync,
   getDirectoryBy,
   writeJsonFileSync,
-} from 'a-node-tools';
+} from '@vvi/node';
 
 const packageJson = readFileToJsonSync('./dist/package.json');
 
